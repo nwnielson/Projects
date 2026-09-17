@@ -1,13 +1,13 @@
 import random
 
-# Picks a number from 1 to 100, sets number of attempts to 1, and the guessed number to 0 (to )
-num_random = random.randint(1, 100)
-num_attempts = 1
-num_guess = 0
 like_to_play = True
 
 #sets up a loop to keep playing until user is done.
 while(like_to_play == True) :
+    # Picks a number from 1 to 100, sets number of attempts to 1, and the guessed number to 0 (to )
+    num_random = random.randint(1, 100)
+    num_attempts = 1
+    num_guess = 0
     #runs a loop as long as the guessed number isn't the same as the random number
     while(num_guess != num_random) :
         if num_guess == 0 :
@@ -25,6 +25,7 @@ while(like_to_play == True) :
             continue
         
     print("You got it", end="")
+    #runs checks to see how many attempts it took, giving different replies depending on how many tries it took.
     if num_attempts == 1 :
         print("! First try?? You must be cheating!\n")
     elif num_attempts >= 10 :
@@ -37,8 +38,11 @@ while(like_to_play == True) :
         print("! Good job! You got it in 4 or 5 tries.")
     else :
         print("! Impressive!")
+    #resets number of guesses to 0 and prompts the user if they would like to play again. If not, the program ends
+    
     num_guess = 0 
-    play_again = input("Do you want to Play again? Y or N\n")
+    play_again = input("Do you want to Play again? Y or N\n").upper()
     if play_again.upper() == "N" :
-        like_to_play == False
+        like_to_play = False
+        print("Thanks for Playing!")
 
