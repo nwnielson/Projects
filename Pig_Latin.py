@@ -28,7 +28,7 @@ while(pig_latin_loop) :
         #Rule for if the word starts with a consenant 
         else :
         #Rule for if the word starts with 3 consenants
-            if pig_latin_word.upper().startswith(("SCR", "SPL", "SPR", "STR", "SQU", "SHR", "THR")) :
+            if pig_latin_word.upper().startswith(("SCR", "SPL", "SPR", "STR", "SQU", "SHR", "THR", "SCH")) :
                 pig_latin_letter = pig_latin_word[:3]
                 pig_latin_word = pig_latin_word[3:] + pig_latin_letter + "ay"
 
