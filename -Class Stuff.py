@@ -1,7 +1,7 @@
 """Functions"""
+def positive_or_negative(numbers) :
 #Give it numbers, and it will give tell you if they're positive or negative, 
 #and keeps track of how many positive, negative, and zeros there are
-def positive_or_negative(numbers) :
     positive_number_count = 0
     negative_number_count = 0
     zero_number_count = 0
