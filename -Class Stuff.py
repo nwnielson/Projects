@@ -1,7 +1,7 @@
 """Functions"""
 def positive_or_negative(numbers) :
-#Give it numbers, and it will give tell you if they're positive or negative, 
-#and keeps track of how many positive, negative, and zeros there are
+    #Give it numbers, and it will give tell you if they're positive or negative, 
+    #and keeps track of how many positive, negative, and zeros there are
     positive_number_count = 0
     negative_number_count = 0
     zero_number_count = 0
@@ -29,9 +29,24 @@ def positive_or_negative(numbers) :
         "# of zeros: " + str(zero_number_count))
     return
 
+def is_even(numbers) :
+    even_number_count = 0
+    odd_number_count = 0
 
+    for index, int in enumerate(numbers) :
+        if numbers[index] % 2 == 0:
+            print(str(numbers[index]) + " is even")
+            even_number_count += 1
+        else :
+            print(str(numbers[index]) + " is odd")
+            odd_number_count += 1
+
+    print("\n# of even numbers: " + str(even_number_count), \
+    "\n# of odd numbers: " + str(odd_number_count), "\n")
+    return
 
 
 
 """Calls"""
-positive_or_negative([5, 10, -7, 4, -17, 0])
+#positive_or_negative([5, 10, -7, 4, -17, 0])
+is_even([1, 7, 19, 22, 24, 8])
