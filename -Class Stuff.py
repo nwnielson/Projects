@@ -49,4 +49,4 @@ def is_even(numbers) :
 
 """Calls"""
 #positive_or_negative([5, 10, -7, 4, -17, 0])
-is_even([1, 7, 19, 22, 24, 8])
+#is_even([1, 7, 19, 22, 24, 8])
